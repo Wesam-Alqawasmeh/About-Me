@@ -116,5 +116,217 @@ switch(q4) {
         break;
 }
 
+let totalMark = 0;
+
+let counter = 1;
+
+let graduationYear = prompt ('Geuss my graduation year between(2017-2021)');
+
+if(graduationYear > 2020){
+    alert('too high')
+
+} else if (graduationYear < 2020){
+    alert('too low')
+}
+
+while (graduationYear != 2020){
+    graduationYear = prompt ('Geuss my graduation year between(2017-2021)')
+    counter++;
+    if(counter === 6){
+        alert('I graduated in 2020')
+        break;
+    }
+    if(graduationYear > 2020){
+        alert('too high')
+    
+    } else if (graduationYear < 2020){
+        alert('too low')
+    }
+}
+
+if (graduationYear == 2020){
+    totalMark++;
+}
+
+let counter2 = 1;
+
+let favNum = prompt ('Geuss my Favorite number between(0-10)');
+
+if(favNum > 7){
+    alert('too high')
+
+} else if (favNum < 7){
+    alert('too low')
+}
+
+while (favNum != 7){
+    favNum = prompt ('Geuss my Favorite number between(0-10)')
+    counter2++;
+    if(counter2 === 6){
+        alert('My favorite number 7')
+        break;
+    }
+    if(favNum > 7){
+        alert('too high')
+    
+    } else if (favNum < 7){
+        alert('too low')
+    }
+}
+
+if(favNum == 7){
+    totalMark++;
+}
+
+let counter3 = 1;
+
+let certificate = prompt ('Geuss how many certificates i have between(0-4)');
+
+if(certificate > 3){
+    alert('too high')
+
+} else if (certificate < 3){
+    alert('too low')
+}
+
+while (certificate != 3){
+    certificate = prompt ('Geuss how many certificates i have between(0-4)')
+    counter3++;
+    if(counter3 === 6){
+        alert('I have 3 certificates in my major')
+        break;
+    }
+    if(certificate > 3){
+        alert('too high')
+    
+    } else if (certificate < 3){
+        alert('too low')
+    }
+}
+
+if (certificate == 3){
+    totalMark++;
+}
+
+let counter4 = 1;
+
+let competitions = prompt ('Geuss how many competitions i won between(0-4)');
+
+if(competitions > 1){
+    alert('too high')
+
+} else if (competitions < 1){
+    alert('too low')
+}
+
+while (competitions != 1){
+    competitions = prompt ('Geuss how many competitions i won between(0-4)')
+    counter4++;
+    if(counter4 === 6){
+        alert('thr right answer is 1')
+        break;
+    }
+    if(competitions > 1){
+        alert('too high')
+    
+    } else if (competitions < 1){
+        alert('too low')
+    }
+}
+
+if(competitions == 1){
+    totalMark++;
+}
+
+let counter5 = 1;
+
+let age = prompt ('Geuss my age between (18-25)');
+
+if(age > 23){
+    alert('too high')
+
+} else if (age < 23){
+    alert('too low')
+}
+
+while (age != 23){
+    age = prompt ('Geuss my age between (18-25)')
+    counter5++;
+
+    if(counter5 === 6){
+        alert('the right answer is 23')
+        break;
+    }
+
+    if(age > 23){
+        alert('too high')
+    
+    } else if (age < 23){
+        alert('too low')
+    }
+}
+
+if(age == 23){
+    totalMark++;
+}
+
+let counter6 = 1;
+
+let gpa = prompt ('Geuss my GPA in University between (3-3.5)');
+
+if(gpa > 3.34){
+    alert('too high')
+
+} else if (gpa < 3.34){
+    alert('too low')
+}
+
+while (gpa != 3.34){
+    gpa = prompt ('Geuss my GPA in University between (3-3.5)')
+    counter6++;
+    if(counter6 === 6){
+        alert('My GPA is 3.34')
+        break;
+    }
+    if(gpa > 3.34){
+        alert('too high')
+    
+    } else if (gpa < 3.34){
+        alert('too low')
+    }
+}
+
+if(gpa == 3.34){
+    totalMark++;
+}
+
+let counter7 = 1;
+
+let courseName = ['code 201-d34',201,'201d34'];
+let course = prompt('What is the name of our corse ? ');
+switch(course){
+    case courseName:
+        alert('right answer')
+        totalMark++;
+        break;
+    
+    default :
+    
+    while (counter7 < 7){
+        course = prompt('What is the name of our corse ? ')
+        counter7++;
+        if(counter7 === 6){
+            alert('the possible answers : code 201-d34, 201, 201d34')
+            break;
+        }
+         }
+         break;
+
+}
+
+alert('your total mark is ' + totalMark + ' of 7')
+
+
+
 alert ('This is the end of the guessing game ' + userName + ', welcome to my web page ^_^')
 
