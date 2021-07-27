@@ -24,15 +24,15 @@ switch(readyMassage) {
         break;
 }
 
-let q1 = prompt ('DO you know my name ?').toLowerCase();
+let q1 = prompt ('Am I Wesam ?').toLowerCase();
 switch(q1) {
     case 'yes' :
-        alert('^_^');
+        alert('right ^_^');
         // console.log('yes');
         break;
 
         case  'y' :
-        alert('^_^');
+        alert('right ^_^');
         // console.log('yes');
         break;
         
@@ -47,15 +47,15 @@ switch(q1) {
         break;
 }
 
-let q2 = prompt ('Do you know my age ?').toLowerCase();
+let q2 = prompt ('Is my age 23 ?').toLowerCase();
 switch(q2) {
     case 'yes' :
-        alert('^_^');
+        alert('Right answer');
         // console.log('yes');
         break;
 
         case  'y' :
-        alert('^_^');
+        alert('Right answer');
         // console.log('yes');
         break;
         
@@ -101,7 +101,7 @@ switch(q4) {
         break;
 
         case  'y' :
-        alert('Rigth');
+        alert('Right');
         // console.log('yes');
         break;
         
