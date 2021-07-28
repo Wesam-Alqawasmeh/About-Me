@@ -24,28 +24,33 @@ switch(readyMassage) {
         break;
 }
 
-let q1 = prompt ('Am I Wesam ?').toLowerCase();
-switch(q1) {
-    case 'yes' :
-        alert('right ^_^');
-        // console.log('yes');
-        break;
-
-        case  'y' :
-        alert('right ^_^');
-        // console.log('yes');
-        break;
-        
-        case 'no' :
+function myName(m){
+    let q1 = prompt (m).toLowerCase();
+    switch(q1) {
+        case 'yes' :
+            alert('right ^_^');
+            // console.log('yes');
+            break;
+    
+            case  'y' :
+            alert('right ^_^');
+            // console.log('yes');
+            break;
+            
+            case 'no' :
+                alert('I am Wesam Alqawasmeh');
+                // console.log('no');
+                break;
+    
+            case  'n' :
             alert('I am Wesam Alqawasmeh');
             // console.log('no');
             break;
-
-        case  'n' :
-        alert('I am Wesam Alqawasmeh');
-        // console.log('no');
-        break;
+    }
 }
+
+myName('Am I Wesam ?');
+
 
 let q2 = prompt ('Is my age 23 ?').toLowerCase();
 switch(q2) {
@@ -118,35 +123,40 @@ switch(q4) {
 
 let totalMark = 0;
 
-let counter = 1;
+function graduation(g){
+    let counter = 1;
 
-let graduationYear = prompt ('Geuss my graduation year between(2017-2021)');
-
-if(graduationYear > 2020){
-    alert('too high')
-
-} else if (graduationYear < 2020){
-    alert('too low')
-}
-
-while (graduationYear != 2020){
-    graduationYear = prompt ('Geuss my graduation year between(2017-2021)')
-    counter++;
-    if(counter === 6){
-        alert('I graduated in 2020')
-        break;
-    }
+    let graduationYear = prompt (g);
+    
     if(graduationYear > 2020){
         alert('too high')
     
     } else if (graduationYear < 2020){
         alert('too low')
     }
+    
+    while (graduationYear != 2020){
+        graduationYear = prompt (g)
+        counter++;
+        if(counter === 6){
+            alert('I graduated in 2020')
+            break;
+        }
+        if(graduationYear > 2020){
+            alert('too high')
+        
+        } else if (graduationYear < 2020){
+            alert('too low')
+        }
+    }
+    
+    if (graduationYear == 2020){
+        totalMark++;
+    }
 }
 
-if (graduationYear == 2020){
-    totalMark++;
-}
+graduation('Geuss my graduation year between(2017-2021)');
+
 
 let counter2 = 1;
 
@@ -270,42 +280,47 @@ if(age == 23){
     totalMark++;
 }
 
-let counter6 = 1;
+function myGpa(p){
+    let counter6 = 1;
 
-let gpa = prompt ('Geuss my GPA in University between (3-3.5)');
-
-if(gpa > 3.34){
-    alert('too high')
-
-} else if (gpa < 3.34){
-    alert('too low')
-}
-
-while (gpa != 3.34){
-    gpa = prompt ('Geuss my GPA in University between (3-3.5)')
-    counter6++;
-    if(counter6 === 6){
-        alert('My GPA is 3.34')
-        break;
-    }
+    let gpa = prompt (p);
+    
     if(gpa > 3.34){
         alert('too high')
     
     } else if (gpa < 3.34){
         alert('too low')
     }
+    
+    while (gpa != 3.34){
+        gpa = prompt (p)
+        counter6++;
+        if(counter6 === 6){
+            alert('My GPA is 3.34')
+            break;
+        }
+        if(gpa > 3.34){
+            alert('too high')
+        
+        } else if (gpa < 3.34){
+            alert('too low')
+        }
+    }
+    
+    if(gpa == 3.34){
+        totalMark++;
+    }
 }
 
-if(gpa == 3.34){
-    totalMark++;
-}
+myGpa('Geuss my GPA in University between (3-3.5)');
+
 
 let counter7 = 1;
 
 let courseName = ['code 201-d34',201,'201d34'];
 let course = prompt('What is the name of our corse ? ');
 switch(course){
-    case courseName:
+    case courseName[0][1][2] :
         alert('right answer')
         totalMark++;
         break;
@@ -328,5 +343,4 @@ alert('your total mark is ' + totalMark + ' of 7')
 
 
 
-alert ('This is the end of the guessing game ' + userName + ', welcome to my web page ^_^')
-
+alert ('This is the end of the guessing game ' + userName + ', welcome to my web page ^_^') 
